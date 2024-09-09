@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreringsskjema</title>
+</head>
+
+<body>
+    <header>
+        <h1>Registreringsskjema</h1>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/HTML5Ovelse/Oppgave2/index.html">Hjem</a></li>
+            <li><a href="/HTML5Ovelse/Oppgave1/validering.html">Valideringsoppgave</a></li>
+            <li><a href="/HTML5Ovelse/Oppgave2/nettsidemal.html">Nettside mal</a></li>
+            <li><a href="/HTML5Ovelse/Oppgave2/kontaktoss.html">Kontakt oss</a></li>
+            <li><a href="/HTML5Ovelse/Oppgave2/registreringsskjema.html">Registreringsskjema</a></li>
+            <li><a href="/HTML5Ovelse/Oppgave2/oppskrift.html">Oppskrift</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Lorem ipsum tekst</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+
+        <section>
+            <form action="example.php" target="_blank">
+                <label for="fname">Navn:</label>
+                <input type="text" id="fname" name="fname" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+
+                <label for="epost">E-post:</label>
+                <input type="email" id="epost" name="epost" required>
+
+                <label for="passord">Passord:</label>
+                <input type="password" id="passord" name="passord" minlength="8"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+
+                <label for="alder">Alder:</label>
+                <input type="number" id="alder" name="alder" min="18" max="99" required>
+
+                <label for="tlfnummer">Telefonnummer:</label>
+                <input type="tel" id="tlfnummer" name="tlfnummer" pattern="[0-9]{8,12}" required>
+
+                <label for="fodselsdato">Fødselsdato:</label>
+                <input type="date" id="fodselsdato" name="fodselsdato" max="2023-12-31" required>
+
+                <input type="radio" name="kjonn" value="mann" required>Mann
+                <input type="radio" name="kjonn" value="kvinne" required>Kvinne
+                <input type="radio" name="kjonn" value="annet" required>Annet
+
+
+                <label for="velgLand">Velg land:</label>
+                <select id="velgLand" name="velgLand" required>
+                    <option value="" disabled selected>Velg land</option>
+                    <option value="norge">Norge</option>
+                    <option value="sverige">Sverige</option>
+                    <option value="danmark">Danmark</option>
+                </select>
+
+                <label>Samtykker du til personvernerklæringen?</label>
+                <input type="radio" id="ja" name="personvern" value="ja" required>Ja
+                <input type="radio" id="nei" name="personvern" value="nei" required>Nei
+
+
+                <input type="submit" value="Send inn">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Piotr Husak piotrh@hiof.no</p>
+    </footer>
+
+</body>
+
+</html>
