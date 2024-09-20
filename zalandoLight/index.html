@@ -10,9 +10,9 @@
 
 <body>
     <header>
-        <img src="img/zalandoLogo.webp" alt="Nettsted logo">
+        <img id="main-logo" src="img/zalandoLogo.webp" alt="Zalando logo">
         <nav>
-            <ul>
+            <ul class="flex-menu">
                 <li><a href="#">Nyheter</a></li>
                 <li><a href="#">Nordisk stil</a></li>
                 <li><a href="#">Klar</a></li>
@@ -21,56 +21,53 @@
                 <li><a href="#">Streetwear</a></li>
                 <li><a href="#">Sport</a></li>
                 <li><a href="#">Designer</a></li>
-                <li><a href="#">Outlet</a></li>
+                <li><a href="#" id="outlet">Outlet</a></li>
             </ul>
 
-            <form>
-                <label for="search">Sok</label>
-                <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
-                <input type="submit" value="Sok" />
+            <form class="search-form">
+                <label for="search">Søk</label>
+                <input type="search" placeholder="Her kan du søke etter produkter..." id="search" name="search">
+                <input type="submit" value="Søk">
             </form>
         </nav>
     </header>
+
     <main>
         <section>
             <h2>Våre beste deals</h2>
             <a href="#">Shop nå -></a>
-            <img src="img/powerup.webp" alt="Våre beste deals">
+            <img src="img/nike1.webp" alt="Våre beste deals" class="deal-image">
         </section>
-        <section>
+
+        <section style="display: flex;">
             <h2>Produkter</h2>
-            <article>
-                <img src="img/produktbilde.webp" alt="adidas Orginals handbal">
-                <a href="#">adidas Originals</a>
-                <a href="#">
-                    <h3>Handbal Spezial</h3>
-                </a>
-                <p>1299 kr</p>
-            </article>
-            <article>
-                <img src="img/produktbilde.webp" alt="adidas Orginals handbal">
-                <a href="#">adidas Originals</a>
-                <a href="#">
-                    <h3>Handbal Spezial</h3>
-                </a>
-                <p>1299 kr</p>
-            </article>
-            <article>
-                <img src="img/produktbilde.webp" alt="adidas Orginals handbal">
-                <a href="#">adidas Originals</a>
-                <a href="#">
-                    <h3>Handbal Spezial</h3>
-                </a>
-                <p>1299 kr</p>
-            </article>
-            <article>
-                <img src="img/produktbilde.webp" alt="adidas Orginals handbal">
-                <a href="#">adidas Originals</a>
-                <a href="#">
-                    <h3>Handbal Spezial</h3>
-                </a>
-                <p>1299 kr</p>
-            </article>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="img/produktbilde.webp" alt="adidas Originals Handball">
+                    <a href="#">adidas Originals</a>
+                    <h3>Handball Spezial</h3>
+                    <p>1299 kr</p>
+                </article>
+                <article class="product-card">
+                    <img src="img/produktbilde.webp" alt="adidas Originals Handball">
+                    <a href="#">adidas Originals</a>
+                    <h3>Handball Spezial</h3>
+                    <p>1299 kr</p>
+                </article>
+                <article class="product-card">
+                    <img src="img/produktbilde.webp" alt="adidas Originals Handball">
+                    <a href="#">adidas Originals</a>
+                    <h3>Handball Spezial</h3>
+                    <p>1299 kr</p>
+                </article>
+                <article class="product-card">
+                    <img src="img/produktbilde.webp" alt="adidas Originals Handball">
+                    <a href="#">adidas Originals</a>
+                    <h3>Handball Spezial</h3>
+                    <p>1299 kr</p>
+                </article>
+
+            </div>
         </section>
     </main>
 </body>

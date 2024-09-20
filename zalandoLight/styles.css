@@ -1,3 +1,134 @@
+/* Global Styles */
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+element {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+}
+
 img {
     width: 100%;
+    max-width: 400px;
+}
+
+#main-logo {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+.flex-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.flex-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+#outlet {
+    color: #ff0000;
+}
+
+.search-form {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.search-form input[type="search"] {
+    padding: 0.5rem;
+    width: 250px;
+}
+
+.search-form input[type="submit"] {
+    padding: 0.5rem;
+    margin-left: 5px;
+}
+
+.flex-space-b h2 {
+    width: 100%;
+}
+
+.flex-space-b form {
+    position: relative;
+}
+
+main {
+    padding: 1rem;
+}
+
+.deal-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 4px;
+    padding: 1rem;
+
+}
+
+article img {
+    width: 100%;
+    max-width: 180px;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-weight: bold;
 }
