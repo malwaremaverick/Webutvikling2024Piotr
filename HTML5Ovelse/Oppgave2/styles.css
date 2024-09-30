@@ -15,7 +15,7 @@ body {
 
 /* Header */
 header {
-    background-image: url('your-image-url.jpg'); /* Sett inn riktig bilde */
+    background-image: url('forside.jpg');
     background-size: cover;
     background-position: center;
     color: white;
