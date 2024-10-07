@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background-image: url('forside.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    font-size: 2rem;
+}
+
+nav {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    text-align: center;
+}
+
+.content {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.article {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+aside {
+    grid-column: 3 / 4;
+    grid-row: 3;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: left;
+}
