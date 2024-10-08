@@ -14,6 +14,28 @@ body {
     box-sizing: border-box;
 }
 
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 2rem;
+}
+
+#global-header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1 / 2;
+}
+
+#banner {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+        max-width: 100%;
+    }
+}
+
 element {
     display: flex;
     flex-wrap: wrap;
@@ -85,9 +107,30 @@ nav {
 
 main {
     padding: 1rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
-.deal-image {
+main nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+a {
+    color: #000;;
+}
+
+category-menu {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#category-menu nav ul {
+    list-style: none;
+}.deal-image {
     width: 100%;
     max-width: 600px;
     margin-top: 1rem;
@@ -127,6 +170,11 @@ h2 {
 h3 {
     font-size: 1.2rem;
     margin: 0.5rem 0;
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
 }
 
 p {
