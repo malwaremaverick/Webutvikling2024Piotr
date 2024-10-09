@@ -120,7 +120,8 @@ main nav ul {
 }
 
 a {
-    color: #000;;
+    color: #000;
+    ;
 }
 
 category-menu {
@@ -130,7 +131,9 @@ category-menu {
 
 #category-menu nav ul {
     list-style: none;
-}.deal-image {
+}
+
+.deal-image {
     width: 100%;
     max-width: 600px;
     margin-top: 1rem;

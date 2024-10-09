@@ -4,60 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zalando</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Zalando Light | Forside</title>
 </head>
-
 
 <body>
     <div id="grid-container">
         <header id="global-header">
-            <img id="main-logo" src="img/zalandoLogo.webp" alt="Zalando logo">
-            <nav>
+            <img id="main-logo" src="img/Zalando-Logo.png" alt="Nettsted logo">
+            <nav class="flex-space-b">
                 <ul class="flex-menu">
                     <li><a href="#">Nyheter</a></li>
                     <li><a href="#">Nordisk stil</a></li>
-                    <li><a href="#">Klar</a></li>
+                    <li><a href="#">Klær</a></li>
                     <li><a href="#">Sko</a></li>
                     <li><a href="#">Accessories</a></li>
                     <li><a href="#">Streetwear</a></li>
                     <li><a href="#">Sport</a></li>
                     <li><a href="#">Designer</a></li>
-                    <li><a href="#" id="outlet">Outlet</a></li>
+                    <li><a href="#">Outlet</a></li>
                 </ul>
-
-                <form class="search-form">
+                <form>
                     <label for="search">Søk</label>
-                    <input type="search" placeholder="Her kan du søke etter produkter..." id="search" name="search">
-                    <input type="submit" value="Søk">
+                    <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
+                    <input type="submit" value="søk">
                 </form>
             </nav>
         </header>
-
-        <nav>
-            <ul>
-                <li><a href="#">Dame</a></li>
-                <li>Sko</li>
-            </ul>
-        </nav>
-
         <aside id="category-menu">
             <nav>
                 <ul>
-                    <li>Sko</li>
-                    <ul>
-                        <li>Sandaler</li>
-                        <li>Pumps</li>
-                        <li>Høye hæler</li>
-                        <li>Joggesko</li>
-                    </ul>
+                    <li>
+                        Sko
+                        <ul>
+                            <li>Sandaler</li>
+                            <li>Pumps</li>
+                            <li>Høye hæler</li>
+                            <li>Joggesko</li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </aside>
-
         <main>
+            <nav>
+                <ul>
+                    <li> <a href="#">Dame ></a></li>
+                    <li>Sko</li>
+                </ul>
+            </nav>
             <h1>Sko til dame</h1>
-            <section class="flex-space-b">
+            <section>
                 <h2>Produkter</h2>
                 <form>
                     <select name="brand">
@@ -72,44 +69,93 @@
                         <option value="high">Høyest pris</option>
                     </select>
                 </form>
-            </section>
-            <section>
-                <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal">
-                    <a href="#">adidas Originals</a>
-                    <a href="#">
-                        <h3>Handbal Spezial</h3>
-                    </a>
-                    <p>1299 kr</p>
-                </article>
-                <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal">
-                    <a href="#">adidas Originals</a>
-                    <a href="#">
-                        <h3>Handbal Spezial</h3>
-                    </a>
-                    <p>1299 kr</p>
-                </article>
-                <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal">
-                    <a href="#">adidas Originals</a>
-                    <a href="#">
-                        <h3>Handbal Spezial</h3>
-                    </a>
-                    <p>1299 kr</p>
-                </article>
-                <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal">
-                    <a href="#">adidas Originals</a>
-                    <a href="#">
-                        <h3>Handbal Spezial</h3>
-                    </a>
-                    <p>1299 kr</p>
-                </article>
+                <section class="flex-space-b">
+                    <article class="product-card">
+                        <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                        <a href="#">adidas Originals</a>
+                        <a href="#">
+                            <h3>Handbal Spezial</h3>
+                        </a>
+                        <p>1299 kr</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                        <a href="#">adidas Originals</a>
+                        <a href="#">
+                            <h3>Handbal Spezial</h3>
+                        </a>
+                        <p>1299 kr</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                        <a href="#">adidas Originals</a>
+                        <a href="#">
+                            <h3>Handbal Spezial</h3>
+                        </a>
+                        <p>1299 kr</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                        <a href="#">adidas Originals</a>
+                        <a href="#">
+                            <h3>Handbal Spezial</h3>
+                        </a>
+                        <p>1299 kr</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                        <a href="#">adidas Originals</a>
+                        <a href="#">
+                            <h3>Handbal Spezial</h3>
+                        </a>
+                        <p>1299 kr</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                        <a href="#">adidas Originals</a>
+                        <a href="#">
+                            <h3>Handbal Spezial</h3>
+                        </a>
+                        <p>1299 kr</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                        <a href="#">adidas Originals</a>
+                        <a href="#">
+                            <h3>Handbal Spezial</h3>
+                        </a>
+                        <p>1299 kr</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                        <a href="#">adidas Originals</a>
+                        <a href="#">
+                            <h3>Handbal Spezial</h3>
+                        </a>
+                        <p>1299 kr</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                        <a href="#">adidas Originals</a>
+                        <a href="#">
+                            <h3>Handbal Spezial</h3>
+                        </a>
+                        <p>1299 kr</p>
+                    </article>
+                </section>
             </section>
         </main>
-
-        <footer>Zalando Light 2024</footer>
+        <footer>
+            Zalando Light 2024
+        </footer>
     </div>
 </body>
 
