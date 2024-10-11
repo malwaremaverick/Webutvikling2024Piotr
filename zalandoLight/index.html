@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../zalandoLight/ikoner/css/fontawesome.css" rel="stylesheet" />
-    <link href="../zalandoLight/ikoner/css/brands.css" rel="stylesheet" />
-    <link href="../zalandoLight/ikoner/css/solid.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
+    <link href="ikoner/css/brands.css" rel="stylesheet" />
+    <link href="ikoner/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Zalando Light | Forside</title>
 </head>
 
@@ -16,7 +16,7 @@
         <header id="global-header">
             <img id="main-logo" src="img/Zalando-Logo.png" alt="Nettsted logo">
             <nav class="flex-space-b">
-                <i class="fa-solid fa-burger" id="menu"></i>
+                <i class="fa-solid fa-burger" onclick="toggleMenu()"></i>
                 <ul class="flex-menu" id="menu">
                     <li><a href="#">Nyheter</a></li>
                     <li><a href="#">Nordisk stil</a></li>
@@ -45,81 +45,97 @@
             </section>
             <section class="flex-space-b">
                 <h2>Produkter</h2>
-
-                <article class="product-card" >
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                <article class="product-card">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Orginals handbal spezial">
+                    </picture>
                     <a href="#">adidas Originals</a>
                     <a href="#">
                         <h3>Handbal Spezial</h3>
                     </a>
                     <p>1299 kr</p>
                 </article>
-
                 <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/shoe-161027_640.png.jpg">
+                        <!-- Image by <a href="https://pixabay.com/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=161027">OpenClipart-Vectors</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=161027">Pixabay</a> -->
+                        <source media="(max-width:800px)" srcset="img/sko/shoe-161027_1280.png">
+                        <img src="img/sko/shoe-161027_1920.png" alt="adidas Orginals handbal spezial">
+                    </picture>
                     <a href="#">adidas Originals</a>
                     <a href="#">
                         <h3>Handbal Spezial</h3>
                     </a>
                     <p>1299 kr</p>
                 </article>
-
                 <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Orginals handbal spezial">
+                    </picture>
                     <a href="#">adidas Originals</a>
                     <a href="#">
                         <h3>Handbal Spezial</h3>
                     </a>
                     <p>1299 kr</p>
                 </article>
-
                 <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Orginals handbal spezial">
+                    </picture>
                     <a href="#">adidas Originals</a>
                     <a href="#">
                         <h3>Handbal Spezial</h3>
                     </a>
                     <p>1299 kr</p>
                 </article>
-
                 <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Orginals handbal spezial">
+                    </picture>
                     <a href="#">adidas Originals</a>
                     <a href="#">
                         <h3>Handbal Spezial</h3>
                     </a>
                     <p>1299 kr</p>
                 </article>
-
                 <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Orginals handbal spezial">
+                    </picture>
                     <a href="#">adidas Originals</a>
                     <a href="#">
                         <h3>Handbal Spezial</h3>
                     </a>
                     <p>1299 kr</p>
                 </article>
-
                 <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Orginals handbal spezial">
+                    </picture>
                     <a href="#">adidas Originals</a>
                     <a href="#">
                         <h3>Handbal Spezial</h3>
                     </a>
                     <p>1299 kr</p>
                 </article>
-
                 <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
-                    <a href="#">adidas Originals</a>
-                    <a href="#">
-                        <h3>Handbal Spezial</h3>
-                    </a>
-                    <p>1299 kr</p>
-                </article>
-
-                <article class="product-card">
-                    <img src="img/produktbilde.webp" alt="adidas Orginals handbal spezial">
+                    <picture>
+                        <source media="(max-width:400px)" srcset="img/sko/produktbilde200x288.jpg">
+                        <source media="(max-width:800px)" srcset="img/sko/produktbilde400x576.jpg">
+                        <img src="img/sko/produktbilde800x1151.jpg" alt="adidas Orginals handbal spezial">
+                    </picture>
                     <a href="#">adidas Originals</a>
                     <a href="#">
                         <h3>Handbal Spezial</h3>
@@ -132,7 +148,6 @@
             Zalando Light 2024
         </footer>
     </div>
-    
     <script>
         let toggleMenu = () => {
             let x = document.getElementById("menu");
