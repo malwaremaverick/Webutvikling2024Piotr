@@ -1,18 +1,27 @@
-@import 'colors.scss';
-form {
-    background-color: $white;
-    padding: 3rem;
-    color: $black;
-    max-width: 600px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    gap: 0.5rem;;
-    
-}
+@use 'colors' as *;
+@use 'mixins' as *;
+@use 'design' as *;
 
-input {
-    padding: 1rem;
-    border: 1px solid $black;
+
+form {
+    color: $black;
+    @extend .blurredeffect;
+    @include flexbox(column, nowrap, 1rem);
+    @include box(600px, auto, 3rem, 30px);
+
+    label {
+        @include box(100%, auto, 1rem, 30px);
+        @include flexbox(row, nowrap, 1rem);
+        background-color: white;
+
+        i {
+            @include box(50px, 50px, 0.5rem, 100%);
+            width: 50px;
+            background-color: $black;
+        }
+
+        input {
+            border: none;
+        }
+    }
 }
